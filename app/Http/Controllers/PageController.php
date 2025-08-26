@@ -290,7 +290,7 @@ class PageController extends Controller
     {
         return Page::with([
             'sections' => function ($query) {
-                $query->select('id', 'page_id', 'title'); // ne récupérer que les champs nécessaires
+                $query->select('id', 'page_id', 'title');
             }
         ])
             ->where('slug', 'accueil')
