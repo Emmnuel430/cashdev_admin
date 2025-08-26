@@ -44,7 +44,7 @@
         <p><strong>Téléphone :</strong> {{ $rdv->client_tel }}</p>
         <p><strong>Date du rendez-vous :</strong> {{ \Carbon\Carbon::parse($rdv->date_prise_rdv)->format('d/m/Y H:i') }}
         </p>
-        <p><strong>Détails :</strong> {{ $rdv->commentaires ?? 'Aucun' }}</p>
+        <p><strong>Détails :</strong> {{ $rdv->commentaires ?? 'Aucun détail fourni' }}</p>
         <p class="footer">Ceci est une notification automatique.</p>
     </div>
 </body>

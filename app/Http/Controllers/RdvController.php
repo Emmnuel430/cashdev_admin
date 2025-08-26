@@ -40,6 +40,7 @@ class RdvController extends Controller
 
         // Envoi email à l'entreprise
         $entrepriseEmail = "emmanueldaho859@gmail.com";
+        // $entrepriseEmail = "support@cashdev.africa";
         try {
             Mail::to($entrepriseEmail)->send(new RdvNotification($rdv));
         } catch (\Exception $e) {
