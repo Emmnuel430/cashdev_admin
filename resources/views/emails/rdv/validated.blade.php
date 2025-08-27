@@ -43,7 +43,7 @@
 
 <body>
     <div class="container">
-        <img src="{{ asset('logo.png') }}" alt="Logo CashDev" class="logo" />
+        <img src="{{ public_path('logo.png') }}" alt="Logo CashDev" class="logo" />
         <h1>Bonjour {{ $rdv->client_prenom ?? '' }} {{ $rdv->client_nom }},</h1>
         <p>Votre demande de rendez-vous a bien été reçue.</p>
         <p><strong>Date :</strong> {{ \Carbon\Carbon::parse($rdv->date_prise_rdv)->format('d/m/Y H:i') }}</p>
